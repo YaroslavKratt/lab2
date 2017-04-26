@@ -102,8 +102,8 @@ class Lab2App(server.App):
 
     def getPlot(self, params):
 		index = str(params['index']) 
-		data = self.getData(params)# get data
-		figure = plot.figure()# make figure object
+		data = self.getData(params)
+		figure = plot.figure()
 		subplot = figure.add_subplot(111)
 		ind = numpy.arange(len(data['week']))
 		width = 0.4
